@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     html {
-        font-size: 62.5%; // Setting rem to pixel ratio to 10px
+        font-size: 62.5%; // Setting rem to pixel ratio to 10px ( 1 rem === 10 px)
     }
 
     body {
