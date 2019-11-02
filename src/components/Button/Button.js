@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 const Button = styled.button`
   padding: 0;
-  background-color: #ffd82b;
+  background-color: ${({ color }) => color || 'hsl(49, 100%, 58%)'};
   width: ${({ width }) => width || '220px'};
   height: 4.7rem;
   border: none;
@@ -16,7 +16,7 @@ const Button = styled.button`
   ${({ secondary }) =>
     secondary &&
     css`
-      background-color: #e6e6e6;
+      background-color: hsl(0, 0%, 90%);
       width: 10.5rem;
       height: 3rem;
       font-size: 1rem;
