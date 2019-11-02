@@ -1,7 +1,5 @@
 import React from 'react';
-// eslint-disable-next-line import/no-unresolved
 import Button from 'components/Button/Button';
-// eslint-disable-next-line import/no-unresolved
 import GlobalStyle from 'theme/GlobalStyle';
 
 const Root = () => (
