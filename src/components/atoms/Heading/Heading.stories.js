@@ -6,4 +6,6 @@ export default {
   title: 'Heading',
 };
 
-export const heading = () => <Heading big>Header</Heading>;
+export const big = () => <Heading big>Header</Heading>;
+
+export const normal = () => <Heading>Header</Heading>;
