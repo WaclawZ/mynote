@@ -2,14 +2,14 @@ import styled, { css } from 'styled-components';
 
 const Button = styled.button`
   padding: 0;
-  background-color: ${({ color }) => color || 'hsl(49, 100%, 58%)'};
-  width: ${({ width }) => width || '220px'};
+  background-color: ${({ theme, color }) => color || theme.primary};
+  width: 22rem;
   height: 4.7rem;
   border: none;
   border-radius: 5rem;
   font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 1.6rem;
+  font-weight: ${({ theme }) => theme.bold};
+  font-size: ${({ theme }) => theme.fontSize.s};
   text-transform: uppercase;
   margin: 0.5rem;
 
