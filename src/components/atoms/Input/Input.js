@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import magnifierIcon from 'assets/magnifier.svg';
+import magnifierIcon from 'assets/icons/magnifier.svg';
 
 const Input = styled.input`
   padding: 1.5rem 3rem;
