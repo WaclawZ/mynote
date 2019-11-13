@@ -38,9 +38,9 @@ const StyledHeading = styled(Heading)`
   margin: 0.5rem 0 0;
 `;
 
-const Card = ({ activeColor }) => (
+const Card = ({ cardType }) => (
   <StyledWrapper>
-    <InnerWrapper activeColor={activeColor}>
+    <InnerWrapper activeColor={cardType}>
       <StyledHeading>Hello world</StyledHeading>
       <DateInfo>3 days</DateInfo>
     </InnerWrapper>
@@ -56,11 +56,11 @@ const Card = ({ activeColor }) => (
 );
 
 Card.propTypes = {
-  activeColor: PropTypes.string,
+  cardType: PropTypes.oneOf(['note', 'twitter', 'article']),
 };
 
 Card.defaultProps = {
-  activeColor: '',
+  cardType: 'note',
 };
 
 export default Card;
