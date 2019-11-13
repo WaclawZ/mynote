@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        padding-left: 15rem;
+        padding-left: 15rem; // move all content 15rem to the left (sidebar width)
         font-size: 1.6rem; // happy rems
         font-family: "Montserrat", sans-serif;
     }
